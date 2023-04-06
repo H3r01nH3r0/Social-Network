@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    background-color: #333;
+    padding: 15px 0;
+    font-weight: 600;
+}
+
+.sub-header {
+    margin: 0 250px auto;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-header {
+    width: 190px;
+}
+
+.search {
+    max-width: 210px;
+    position: relative;
+}
+
+.search input {
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 0;
+    outline: none;
+    width: 200px;
+    font-size: 16px;
+    background-color: #222;
+    color: #FFF;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+.search-icon {
+    transform: scale(1.4);
+    position: absolute;
+    color: #999;
+    left: 210px;
+    top: 10px;
+}
+
+.color-text {
+    color: #2655cf;
+}
+
+.login-container {
+    display:  flex;
+    margin: 100px auto;
+    align-items: center;
+    padding: 20px;
+    max-width: 1024px;
+}
+
+.about {
+    flex: 1;
+    padding: 20px;
+    max-width: 70%;
+}
+  
+.about h1 {
+    font-size: 60px;
+    text-align: left;
+}
+  
+.about p {
+    font-size: 25px;
+}
+
+.login {
+    flex: 2;
+    max-width: 30%;
+    border-radius: 15px;
+    padding: 25px;
+    background-color: #333;
+}
+
+.login h1 {
+    margin-bottom: 30px;
+}
+  
+.login form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.login label {
+    margin-bottom: 10px;
+}
+  
+.login input {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: 0;
+    background-color: #222;
+    outline: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+  
+.login button {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+}
+  
+.login button:hover {
+    background-color: #1c1c1c;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group button {
+    flex-basis: 48%;
+}
+
+
+.error-container {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.error-container a {
+    color: #3782e5;
+    text-align: left;
+}
+
+.error-msg {
+    color: red;
+    width: 48%;
+    font-size: 18px;
+    text-align: right;
+    align-items: center;
+}
+
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-container {
+    background-color: #333;
+    margin: auto;
+    padding: 20px;
+    border: 0;
+    width: 25%;
+    border-radius: 15px;
+}
+
+.modal-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-container h1 {
+    margin-bottom: 30px;
+}
+
+.modal-container label {
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+
+.modal-container input {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: 0;
+    background-color: #222;
+    outline: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+  
+.modal-container button {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+.modal-container button:hover {
+    background-color: #1c1c1c;
+}
+
+.close {
+    color: #222;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #1c1c1c;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-row input {
+    width: 41%;
+}
+
+.registration {
+    position: fixed;
+    z-index: 1;
+    padding-top: 200px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.reg-success {
+    background-color: #333;
+    margin: auto;
+    padding: 20px;
+    border: 0;
+    width: 25%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.reg-success h1 {
+    padding-bottom: 15px;
+}
+.reg-success p {
+    font-size: 20px;
+    margin: 5px;
+}
+  
+.reg-success button {
+    margin-top: 15px;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+.reg-success button:hover {
+    background-color: #1c1c1c;
+}
+
+.modal-container .error-msg {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.wall-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #222;
+    margin: 0 250px auto;
+    height: auto;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
+    margin-top: 20px;
+    background-color: #333;
+    max-height: 240px;
+}
+
+.menu-container ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.menu-container li {
+    margin: 10px 0;
+}
+  
+.menu-container a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+}
+  
+.menu-container a:hover,
+.menu-container a.active {
+    background-color: #666;
+    color: #fff;
+}
+
+.menu-container a span {
+    font-size: 16px;
+    color: inherit;
+    margin: 0 5px;
+}
+
+.create-container {
+    padding: 20px;
+}
+
+.create-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #666;
+    transition: transform 500ms ease;
+    margin: 30px 0;
+}
+
+.create-btn:hover {
+    color: #777;
+    transform: scale(1.1);
+}
+
+.create-icon {
+    transform: scale(3);
+    transition: transform 500ms ease;
+}
+
+
+.create-icon.rotated {
+    transform: rotate(45deg) scale(3);
+}
+
+.content {
+    overflow-y: auto;
+    width: 100%;
+}
+
+.no-content {
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 18px;
+}
+
+.post-container {
+    background-color: #333;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+    min-height: 185px;
+    min-width: 690px;
+    max-width: 690px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+  
+.default-user {
+    padding: 20px;
+    transform: scale(3);
+}
+  
+.username {
+    font-weight: bold;
+    font-size: 18px;
+    color: #2655cf;
+}
+  
+.post-date {
+    font-size: 14px;
+    color: #a9a9a9;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.post-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.post-title {
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.post-reactions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.like {
+    display: flex;
+    align-items: center;
+}
+
+.like-count {
+    margin-left: 10px;
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+
+.likeIcon {
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: transform 500ms ease;
+}
+
+.likeIcon:hover {
+    transform: scale(1.8);
+}
+
+.new-text textarea{
+    resize: none;
+    width: 97.5%;
+    height: 100px;
+    border-radius: 15px;
+    border: 0;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #222222c0;
+    outline: none;
+}
+
+.create-post {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+    min-width: 690px;
+    max-width: 690px;
+}
+
+.post-updater {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-updater h3 {
+    text-align: start;
+    margin-bottom: 15px;
+}
+
+.post-updater input,
+.create-post input {
+    background-color: #555;
+    border: 0;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.update-post-text,
+.enter-post-text {
+    background-color: #555;
+    border: 0;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    resize: none;
+    min-height: 100px;
+}
+
+.add-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.update-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.update-media button,
+.add-media button {
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: 0;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #2655cf;
+    transition: transform 500ms ease;
+}
+
+.update-media button:hover,
+.add-media button:hover {
+    transform: scale(1.1);
+}
+
+.add-media-icon {
+    padding: 10px;
+    transform: scale(1.5);
+    cursor: pointer;
+    transition: transform 500ms ease;
+}
+
+.delete-media-icon {
+    padding: 10px;
+    transform: scale(1);
+    cursor: pointer;
+    transition: transform 500ms ease;
+}
+
+
+.add-media-icon:hover {
+    transform: scale(2.2);
+}
+
+.delete-media-icon:hover {
+    transform: scale(1.7);
+}
+
+.create-post img {
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.post-image {
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.update-remove {
+    transform: scale(1.5);
+}
+
+.remove,
+.update {
+    padding: 0 10px;
+    cursor: pointer;
+    transition: transform 500ms ease;
+}
+
+@keyframes shake {
+    0% {transform: rotate(-10deg) scale(1.3);}
+    25% {transform: rotate(5deg) scale(1.3);}
+    50% {transform: rotate(-3deg) scale(1.3);}
+    75% {transform: rotate(2deg) scale(1.3);}
+    100% {transform: rotate(0deg) scale(1.3);}
+}
+
+.remove{
+    margin-right: 5px;
+}
+
+.remove:hover,
+.update:hover {
+    animation: shake 1s;
+}
